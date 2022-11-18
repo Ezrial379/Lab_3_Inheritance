@@ -61,10 +61,6 @@ namespace Task_4
         }
 
 
-
-
-
-
         class ApplicationLicense
         {
 
@@ -93,10 +89,8 @@ namespace Task_4
 
         }
 
-   
 
-
-        }
+    }
 
 
 
