@@ -3,6 +3,7 @@ Lab_3_Inheritance.sln
 Task_1/Properties/*
 Task_1/obj/Debug/*
 Task_1/App.config
+Task_1/bin/*
 Task_2/Properties/*
 Task_2/obj/Debug/*
 Task_2/App.config
@@ -12,3 +13,4 @@ Task_3/App.config
 Task_4/Properties/*
 Task_4/obj/Debug/*
 Task_4/App.config
+Task_4/bin/*
