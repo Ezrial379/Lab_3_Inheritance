@@ -9,7 +9,7 @@ namespace Lab_3_inheritance
 
 
 
-    class Program
+    class Methods
     {
 
 

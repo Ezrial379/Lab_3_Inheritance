@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Class_2_or_3
 {
-    internal class Program
+    internal class Vehicles
     {
         static void Main(string[] args)
         {

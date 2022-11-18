@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task_4
 {
-    internal class Program
+    internal class License
     {
         static void Main(string[] args)
         {
