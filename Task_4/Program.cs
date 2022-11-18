@@ -11,15 +11,50 @@ namespace Task_4
         static void Main(string[] args)
         {
 
-            Entering key = new Entering("pro");
+            string Key;
+            Console.WriteLine($"Введiть ключ доступу (можете вiдмовитись, натиснувши символ 'N') :");
+            Key = Console.ReadLine();
+            Console.WriteLine($"Ваш ключ: '{Key}'\n");
 
-            key.Entering_key();
-
-            switch (key)
+            switch (Key)
             {
-                case 1:
-                    Console.WriteLine("FFFF");
+
+                case "pro":
+                    {
+                        Console.WriteLine($"Вас вiтає версiя Pro\n");
+                        ApplicationLicense proWorker = new ApplicationLicense();
+                        proWorker.AllowPro();
+
+                        break;
+                    }
+
+
+                case "trial":
+                    {
+                        Console.WriteLine($"Вас вiтає версiя Trial\n");
+                        ApplicationLicense trialWorker = new ApplicationLicense();
+                        trialWorker.AllowTrial(); 
+
+                        break;
+                    }
+
+
+                case "N":
+                    {
+                        Console.WriteLine($"Вас вiтає безкоштовна версія\n");
+                        ApplicationLicense freeWorker = new ApplicationLicense();
+                        freeWorker.AllowCommon();
+
+                        break;
+                    }
+
+
+                default:
+
+                    Console.WriteLine("Невiрна дiя. Такого коду немає.");
+
                     break;
+
             }
 
 
@@ -58,28 +93,11 @@ namespace Task_4
 
         }
 
-        class Entering
-        {
-
-            public string Key { get; set; }
-
-            public Entering(string key)
-            {
-                Key = key;
-            }
-
-            public void Entering_key()
-            {
-
-                Console.WriteLine("Введіть ключ: ");
-                Key = Console.ReadLine();
-
-            }
+   
 
 
         }
 
 
 
-    }
 }
